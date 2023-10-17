@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Co21sanfNq5NyFIMwhLOsdCnv1MmrFLarqUlchZpgjV10EIHKJFEcXDpoE7+RT7jGZJBmrfDhCmpN3sj5Tvmfg==",
+  "success": true,
+  "projectFilePath": "/Users/anhhuynh/Projects/Booking/Booking/Booking.csproj",
+  "expectedPackageFiles": [
+    "/Users/anhhuynh/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/anhhuynh/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
