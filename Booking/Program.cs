@@ -2,18 +2,14 @@
 using Booking.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-
 public class Program
 {
     public static void Main(string[] args)
     {
-        //setup our DI
         var serviceProvider = new ServiceCollection()
-            
             .AddTransient<IHotelReservation, HotelReservation>()
             .BuildServiceProvider();
 
-        //do the actual work here
         var action = "";
         do
         {
@@ -23,7 +19,6 @@ public class Program
 
             while (!isValid || numberPerson == 0)
             {
-                
                 Console.Write("  Invalid value. Please enter again ");
                 isValid = int.TryParse(Console.ReadLine(), out numberPerson);
             }
@@ -31,7 +26,6 @@ public class Program
             var reservationService = serviceProvider.GetService<IHotelReservation>();
             if (reservationService != null)
             {
-
                 var result = GetBookingConfirmation(numberPerson, reservationService);
                 Console.WriteLine(result);
             }
@@ -44,8 +38,6 @@ public class Program
             action = Console.ReadLine();
         }
         while (action?.ToUpper() == "Y");
-
-        
     }
 
     private static string GetBookingConfirmation(int numberPerson, IHotelReservation hotelReservation)
