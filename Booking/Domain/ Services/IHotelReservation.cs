@@ -6,7 +6,7 @@ namespace Booking.Domain.Services
 {
 	public interface IHotelReservation
 	{
-        List<ReservationDto> CteateReservation(int personNumber);
+        List<ReservationDto> CreateReservation(int personNumber);
 		bool IsEnoughRoom(int personNumber);
 	}
 }
